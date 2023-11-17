@@ -35,7 +35,9 @@ func getRandomFact() (randomFact, error) {
 
 func main() {
 	client = &http.Client{Timeout: 10 * time.Second}
+
 	a := app.New()
+
 	win := a.NewWindow("Get useless fact")
 	win.Resize(fyne.NewSize(800, 300))
 
